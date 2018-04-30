@@ -1,0 +1,10 @@
+:root {
+    /*Створення змінних*/
+    --box1: red;
+    --box2: lightgreen;
+    --box3: #dba36a;
+    --box4: #65afff;
+    --test: 20px;
+    --title: 100px;
+    /* background-color: var(--box1); Використання змінних */
+}
