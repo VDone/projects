@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -17,36 +17,37 @@
             </header>
             <main class="main">
                 <h2 class="main__title">Вітаємо Вас на сторінці реєстрації онлайн-вебінару: «Basic Process Library для SIMATIC WinCC»</h2>
-                <p class="main__text">Просимо заповнити форму нижче, аби ми могли надіслати Вам запрошення та програму заходу:</p>
                 <p class="main__text">Дата: 04 травня 2018р</p>
-                <form class="base-form" name="#" action="mailto:cfo@ukr.net" method="post" id="form1">
-                    <div class="form-set">
+                <p class="main__text">Просимо заповнити форму нижче, аби ми могли надіслати Вам запрошення та програму заходу:</p>
+                <form class="base-form" action="mail.php" method="POST">
+                    <!-- <div class="form-set">
                         <label for="field1">Назва компанії*</label>
-                        <input type="text" name="Company" id="field1" class="base-form__element">
-                    </div>
+                        <input type="text" name="company" id="field1" class="base-form__element">
+                    </div> -->
                     <div class="form-set">
                         <label for="field2">Ім'я*</label>
-                        <input type="text" name="FirstName" id="field2" class="base-form__element">
+                        <input type="text" name="name" id="name" class="base-form__element">
                     </div>
-                    <div class="form-set">
+                    <!-- <div class="form-set">
                         <label for="field3">Прізвище*</label>
-                        <input type="text" name="LastName" id="field3" class="base-form__element">
-                    </div>
+                        <input type="text" name="surname" id="field3" class="base-form__element">
+                    </div> -->
                     <div class="form-set">
                         <label for="field4">Електронна адреса*</label>
-                        <input type="email" name="C_EmailAddress" id="field4" pattern="^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$" class="base-form__element">
+                        <input type="email" name="email" id="email" pattern="^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$" class="base-form__element">
                     </div>
                     <div class="form-set">
                         <label for="field5">Телефон*</label>
-                        <input type="tel" name="Phone" id="field5" class="base-form__element">
+                        <input type="phone" name="phone" id="phone" class="base-form__element" required="">
                     </div>
                     <div class="form-set">
-                        <button type="button" id="base-form__submit" class="base-form__submit">Заре'єструватися</button>
+                        <input type="submit" class="base-form__submit" value="Заре'єструватися">
                     </div>
                 </form>
             </main>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
