@@ -1,27 +1,9 @@
-.wrapper {
-    background-color: #fff;
-    &__image {
-        background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('../img/wrapper_bg.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
-}
-.header {
-    padding: 2rem 0;
-    &__nav {
-        display: none;
-    }
-    &__logo {
-        font-size: 1.125rem;
-        vertical-align: center;
-        line-height: 1.125rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: #555;
-        letter-spacing: 0.25rem;
-    }
+@import "variables.css";
+@import "reset.css";
+@import "header.css";
+@import "footer.css";
+.wrapper-image {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../img/wrapper_bg.jpg');
 }
 .about {
     padding: 10.5rem 0;
@@ -96,28 +78,4 @@
        width: 50%;
        align-items: center;
    }
-}
-@media (min-width: 768px) {
-    .header {
-        display: flex;
-        justify-content: space-between;
-        &__nav {
-            display: block;
-            flex-basis: 60%;
-        }
-        &__menu {
-            display: flex;
-            justify-content: space-around;
-        }
-        &__menulink {
-            text-transform: capitalize;
-            color: #777;
-        }
-        &__menulink {
-            &:hover {
-            color: #bfba55;
-        }
-    }
-}
-    
 }
