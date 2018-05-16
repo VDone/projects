@@ -1,0 +1,26 @@
+.test {
+    padding: rem(40) 0;
+    &__body {
+        margin: rem(30) 0 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    &__img {
+        margin: 0 0 rem(24);
+    }
+    &__title {
+        margin: rem(13) 0;
+        font-family: $font;
+        font-style: italic;
+        text-transform: capitalize;
+    }
+}
+@media (min-width: 768px) {
+    .test {
+        padding: rem(80) 0;
+        &__body {
+            width: prc(480, 736);
+            margin: rem(30) auto 0;
+        }
+    }
+}

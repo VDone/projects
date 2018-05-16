@@ -1,0 +1,15 @@
+.text {
+    font-family: $font;
+    font-size: rem(16);
+    color: $text;
+    font-weight: 700;
+    line-height: 1.8rem;
+    
+    &--center {
+        text-align: center;
+    }
+    
+    &--white {
+        color: $white;
+    }
+}

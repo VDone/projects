@@ -1,0 +1,23 @@
+.slider {
+    padding: rem(100) 0;
+    &__title {
+        color: $white;
+        font-family: $font;
+        font-weight: 700;
+        text-align: center;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+    }
+    &__span {
+        color: $green;
+        display: block;
+    }
+}
+@media (min-width: 768px) {
+    .slider {
+        padding: rem(145) 0;
+        &__title {
+            font-size: 3rem;
+        }
+    }
+}

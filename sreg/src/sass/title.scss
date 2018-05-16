@@ -1,0 +1,21 @@
+.title {
+    font-family: $font;
+    font-size: 2.3rem;
+    color: $black;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    
+    &:first-letter {
+        color: $green;
+    }
+
+    &--white {
+        color: $white;
+    }
+}
+@media (min-width: 768px) {
+    .title {
+        font-size: 2.7rem;
+    }
+}

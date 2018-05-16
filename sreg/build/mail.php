@@ -18,7 +18,7 @@ function sendWithPhpMailer($email,$name,$phone) {
     $mail->addAddress('cfo@ukr.net','Адмін');
     $mail->isHTML(true);
     $mail->Subject = 'Реєстрація нового учасника';
-    $mail->Body = 'Ім\'я' .$name . ' Телефон ' .$phone. '<br>Електронна адреса: ' .$email;
+    $mail->Body = 'Ім\'я' .$name ' Телефон ' .$phone '<br>Електронна адреса: ' .$email;
     if(!$mail->send()) {
         return json_encode($mail->ErrorInfo);
     }else{

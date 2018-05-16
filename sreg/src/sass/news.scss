@@ -1,0 +1,52 @@
+.news {
+    padding: rem(48) 0;
+    &__body {
+        margin: rem(30) 0 0;
+    }
+    &__post {
+        margin: 0 0 rem(24);
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+.post {
+    
+    &__container {
+        box-shadow: rem(1) rem(1) rem(17) $white;
+        background-color: $white;
+        padding: rem(24) rem(24) rem(48);
+        text-align: center;
+        & > .subtitle--green {
+            text-align: center;
+        }
+    }
+    &__date{
+        font-weight: 700;
+        font-size: rem(15);
+        text-transform: uppercase;
+        color: $black;
+        font-family: $font;
+        letter-spacing: rem(1);
+        margin: 0 0 rem(16);
+        display: block;
+    }
+    &__subtitle {
+        margin: 0 0 rem(16);
+        text-transform: uppercase;
+    }
+}
+@media (min-width: 768px) {
+    .news {
+        padding: rem(80) 0;
+        &__body {
+            display: flex;
+            justify-content: space-around;
+            margin: rem(72) 0 0;
+        }
+        &__post {
+            flex-basis: prc(210, 736);
+            margin: 0;
+        }
+    }
+}

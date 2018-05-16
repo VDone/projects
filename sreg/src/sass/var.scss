@@ -1,0 +1,20 @@
+$font: 'Raleway', sans-serif;
+$green: #93c83f;
+$black: #000;
+$white: #fff;
+$bg-color:#1e3953;
+$text: #9f9f9f;
+@mixin bg-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+@function rem ($px) {
+    $result: $px / 16;
+    @return #{$result}rem;
+}
+@function prc ($element, $container) {
+    $result: $element/$container*100%;
+    @return $result;
+}

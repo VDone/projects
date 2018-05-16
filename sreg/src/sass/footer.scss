@@ -1,0 +1,58 @@
+.footer {
+    padding: rem(48) 0;
+    
+    &__info {
+        margin: 0 0 rem(30);
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+.info {
+    font-family: $font;
+    font-weight: 700;
+    color: $white;
+
+    &__subtitle {
+        margin: 0 0 rem(24);
+    }
+    &__req {
+        margin: 0 0 rem(17);
+        &:last-child {
+            margin: 0;
+        }
+    }
+    &__form {
+        margin: rem(30) 0 0;
+        display: flex;
+        width: 100%;
+    }
+    &__mail {
+        padding: rem(15);
+        background-color: $black;
+        outline: none;
+        border: rem(1) solid $white;
+        flex-grow: 1;
+    }
+    &__send {
+        padding: rem(15);
+        background-color: $green;
+        border: rem(1) solid $green;
+        text-transform: capitalize;
+        color: $white;
+        flex-grow: 0.2;
+    }
+}
+@media (min-width: 768px) {
+    .footer {
+        padding: rem(80) 0;
+    }
+    .info {
+           
+        &__subtitle {
+            font-size: rem(24);
+            margin: 0 0 rem(36);
+        }
+    }    
+}
